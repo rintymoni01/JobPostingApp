@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:jobpostingapp/Utils/AppImg/app_img.dart';
+import 'package:jobpostingapp/View/Screen/OnboardingScreen/OnBodingModdel.dart';
 
 class Onboardingscreen extends StatefulWidget {
   const Onboardingscreen({super.key});
@@ -8,6 +10,29 @@ class Onboardingscreen extends StatefulWidget {
 }
 
 class _OnboardingscreenState extends State<Onboardingscreen> {
+
+  final List<Onbodingmoddel> _pages = [
+    Onbodingmoddel(
+      title: " Find Work Fast",
+      description:
+          "Find jobs curated specifically for your skills and experience",
+      image: AppImg.Onbodingimg1,
+    ),
+
+    Onbodingmoddel(
+      title: "Swipe to Apply",
+      description:
+          "Swipe right to apply instantly, left to skip - it's that simple",
+      image: AppImg.Onbodingimg2,
+    ),
+
+    Onbodingmoddel(
+      title: "Track & Connect",
+      description: "Track your applications and chat directly with recruiters",
+      image: AppImg.Onbodingimg3,
+    ),
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -46,9 +71,10 @@ class _OnboardingscreenState extends State<Onboardingscreen> {
                 backgroundColor: Color(0xff0F5F3E),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(37),
-                )
+                ),
               ),
-              child: Row(mainAxisAlignment: MainAxisAlignment.center,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
                     "Next",
@@ -58,8 +84,12 @@ class _OnboardingscreenState extends State<Onboardingscreen> {
                       fontSize: 16,
                     ),
                   ),
-                  SizedBox(width: 9,),
-                  Icon(Icons.arrow_forward_ios_rounded,color: Color(0xffFFFFFF), size: 16,),
+                  SizedBox(width: 9),
+                  Icon(
+                    Icons.arrow_forward_ios_rounded,
+                    color: Color(0xffFFFFFF),
+                    size: 16,
+                  ),
                 ],
               ),
             ),
