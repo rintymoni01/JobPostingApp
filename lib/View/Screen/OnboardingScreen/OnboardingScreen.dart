@@ -60,6 +60,11 @@ class _OnboardingscreenState extends State<Onboardingscreen> {
             ),
           ),
 
+          Expanded(child: PageView.builder(
+              itemBuilder:
+          )
+          ),
+
           Row(mainAxisAlignment: MainAxisAlignment.center, children: []),
 
           SizedBox(
