@@ -18,7 +18,7 @@ class _OnboardingscreenState extends State<Onboardingscreen> {
   final PageController _pageController = PageController();
   int _currentPage = 0;
 
-  final List<Onbodingmoddel> _pages = [
+  final List < Onbodingmoddel> _pages = [
     Onbodingmoddel(
       title: " Find Work Fast",
       description:
